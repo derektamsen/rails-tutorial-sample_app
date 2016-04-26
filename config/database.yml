@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: pg
+  adapter: postgresql
   database: sample_app-<%= ENV['RAILS_ENV'] %>
   pool: 5
   timeout: 5000
