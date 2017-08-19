@@ -6,6 +6,7 @@
 #
 default: &default
   adapter: postgresql
+  url: <%= ENV['DATABASE_URL'] %>
   database: sample_app-<%= ENV['RAILS_ENV'] %>
   pool: 5
   timeout: 5000
